@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import ShowBillSplitter from './showBillSplitter.jsx';
 
 function CreateBillForm() {
   const handleBillCreateFormSubmit = (event) => {
@@ -8,6 +9,7 @@ function CreateBillForm() {
     console.log('clicked');
     axios.post('/bill', { inputBillName: inputValue }).then((result) => {
       console.log(result.data);
+        <ShowBillSplitter billData={result.data} />;
     }).catch((error) => console.log(error));
   };
 
