@@ -12,7 +12,6 @@ module.exports = {
         type: Sequelize.STRING,
       },
       total: {
-        allowNull: false,
         type: Sequelize.NUMERIC(18, 8),
       },
       created_at: {

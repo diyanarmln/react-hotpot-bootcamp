@@ -11,7 +11,6 @@ export default function initBillModel(sequelize, DataTypes) {
       type: DataTypes.STRING,
     },
     total: {
-      allowNull: false,
       type: DataTypes.NUMERIC(18, 8),
     },
     createdAt: {
