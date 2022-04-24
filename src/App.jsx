@@ -3,9 +3,13 @@ import CreateBillForm from './components/createBillForm.jsx';
 
 export default function App() {
   return (
-    <div>
-      <h2>Create a New Bill</h2>
-      <CreateBillForm />
+    <div className="app">
+      <div>
+        <h3>Create a New Bill</h3>
+      </div>
+      <div>
+        <CreateBillForm />
+      </div>
     </div>
   );
 }
