@@ -1,4 +1,5 @@
 import { resolve } from 'path';
+import db from './models/index.mjs';
 
 export default function routes(app) {
   // Root route renders Webpack-generated main.html file
